@@ -1,0 +1,15 @@
+name: learn-github-actions
+
+on: push
+
+jobs: 
+   hellow-world-job:
+
+     runs-on: ububtu-latest
+
+     steps:
+        - name: check out repository code
+          uses: action/checkout/@v4
+        - run: "echo $(cat hello-world.txt)"
+        
+     
